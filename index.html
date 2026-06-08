@@ -3,7 +3,63 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title id="page-title">Yanshika Makeover | Beauty Parlour Rohtak</title>
+
+<!-- ============================================================
+  ✅ BUSINESS CONFIG — EDIT ONLY THIS SECTION FOR EACH PARLOUR
+  ============================================================ -->
+<script id="biz-config">
+const BIZ = {
+  name:         "'N' Unique Beauty Hub",
+  nameSuffix:   "BEAUTY",
+  city:         "JAIPUR",
+  state:        "RAJASTHAN",
+  tagline:      "JAIPUR's Most Loved Beauty Parlour",
+  heroDesc:     "Experience expert beauty treatments at 'N' Unique Beauty Hub, Jaipur's most-loved beauty parlour. From stunning bridal makeovers to everyday glam, we craft looks that reveal your true beauty.",
+  ratingTag:    "⭐ 4.9 Rated",
+  addressLine1: "125, Kamla Nehru Nagar Rd, Kana Vihar",
+  addressLine2: "Jaipur, Rajasthan 302021",
+  phone:        "+9194148 22454",
+  phoneDisplay: "+9194148 22454",
+  email:        "NUniqueBeauty@gmail.com",
+  whatsappMsg:  "Hi N' Unique Beauty! I would like to book an appointment.",
+  googleMapsURL:"https://share.google/9DDIHrErHr07UA9QB",
+  siteURL:      "https://nuniquebeautyhub.netlify.app/",
+  ogImage:      "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80",
+  footerTagline:"Jaipur's most-loved beauty parlour. Transforming looks, boosting confidence, one makeover at a time.",
+  year:         "2025",
+};
+// ============================================================
+// 🚫 DO NOT EDIT BELOW THIS LINE
+// ============================================================
+
+// Runs immediately in <head> — sets title + all meta tags
+// so bots (WhatsApp, Google) see correct data without JS delay
+(function() {
+  var fullName = BIZ.name + " " + BIZ.nameSuffix;
+  var titleText = BIZ.name + " | Beauty Parlour " + BIZ.city;
+  var descText  = BIZ.city + "'s most-loved beauty parlour. " + BIZ.ratingTag + " · " + BIZ.tagline + ". Book on WhatsApp!";
+
+  // Page title
+  document.write('<title>' + titleText + '</title>');
+
+  // SEO description
+  document.write('<meta name="description" content="' + descText + '"/>');
+
+  // Open Graph (WhatsApp, Facebook, Telegram previews)
+  document.write('<meta property="og:title" content="' + titleText + '"/>');
+  document.write('<meta property="og:description" content="' + descText + '"/>');
+  document.write('<meta property="og:type" content="website"/>');
+  document.write('<meta property="og:url" content="' + BIZ.siteURL + '"/>');
+  document.write('<meta property="og:image" content="' + BIZ.ogImage + '"/>');
+  document.write('<meta property="og:site_name" content="' + BIZ.name + '"/>');
+
+  // Twitter / X card
+  document.write('<meta name="twitter:card" content="summary_large_image"/>');
+  document.write('<meta name="twitter:title" content="' + titleText + '"/>');
+  document.write('<meta name="twitter:description" content="' + descText + '"/>');
+  document.write('<meta name="twitter:image" content="' + BIZ.ogImage + '"/>');
+})();
+</script>
 
 <!-- DNS/connection warm-up -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -225,30 +281,9 @@ footer ul a:hover{color:var(--gold)}
 <body>
 
 <!-- ============================================================
-  ✅ BUSINESS CONFIG — EDIT ONLY THIS SECTION FOR EACH PARLOUR
+  🚫 DO NOT EDIT BELOW — handled by BIZ config in <head>
   ============================================================ -->
 <script>
-const BIZ = {
-  name:         "'N' Unique Beauty Hub",
-  nameSuffix:   "BEAUTY",
-  city:         "JAIPUR",
-  state:        "RAJASTHAN",
-  tagline:      "JAIPUR's Most Loved Beauty Parlour",
-  heroDesc:     "Experience expert beauty treatments at 'N' Unique Beauty Hub, Jaipur's most-loved beauty parlour. From stunning bridal makeovers to everyday glam, we craft looks that reveal your true beauty.",
-  ratingTag:    "⭐ 4.9 Rated",
-  addressLine1: "125, Kamla Nehru Nagar Rd, Kana Vihar",
-  addressLine2: "Jaipur, Rajasthan 302021",
-  phone:        "+9194148 22454",
-  phoneDisplay: "+9194148 22454",
-  email:        "NUniqueBeauty@gmail.com",
-  whatsappMsg:  "Hi N' Unique Beauty! I would like to book an appointment.",
-  googleMapsURL:"https://share.google/9DDIHrErHr07UA9QB",
-  footerTagline:"Jaipur's most-loved beauty parlour. Transforming looks, boosting confidence, one makeover at a time.",
-  year:         "2025",
-};
-// ============================================================
-// 🚫 DO NOT EDIT BELOW THIS LINE
-// ============================================================
 document.addEventListener("DOMContentLoaded", function() {
   var fullName  = BIZ.name + " " + BIZ.nameSuffix;
   var phoneHref = "tel:" + BIZ.phone;
@@ -321,19 +356,19 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 <!-- CALL NOW FLOATING BUTTON -->
-<a href="tel:+919350837392" class="fab-call" title="Call Now">
+<a href="tel:+919414822454" class="fab-call" title="Call Now">
   <span class="call-icon">📞</span> Call Now
 </a>
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="logo"><span id="nav-logo">Yanshika</span> Makeover</a>
+  <a href="#" class="logo"><span id="nav-logo">'N' Unique Beauty Hub</span></a>
   <ul>
     <li><a href="#services">Services</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#gallery">Gallery</a></li>
     <li><a href="#reviews">Reviews</a></li>
-    <li><a href="https://wa.me/919350837392?text=Hi%20Yanshika%20Makeover!%20I%20would%20like%20to%20book%20an%20appointment." class="nav-cta" target="_blank" rel="noopener">Book Now</a></li>
+    <li><a href="https://wa.me/919414822454?text=Hi%20N%27%20Unique%20Beauty!%20I%20would%20like%20to%20book%20an%20appointment." class="nav-cta" target="_blank" rel="noopener">Book Now</a></li>
   </ul>
 </nav>
 
@@ -356,21 +391,21 @@ document.addEventListener("DOMContentLoaded", function() {
       allow="autoplay; encrypted-media"
       allowfullscreen
       loading="lazy"
-      title="Yanshika Makeover Beauty Studio">
+      title="N'N Unique Beauty Hub Jaipur">
     </iframe>
   </div>
   <div class="hero-video-overlay"></div>
   <div class="hero-left">
-    <div class="hero-tag fade-up">⭐ 4.9 Rated · Rohtak, Haryana</div>
+    <div class="hero-tag fade-up">⭐ 4.9 Rated · JAIPUR, RAJASTHAN</div>
     <h1 class="fade-up delay-1">
-      <span id="hero-title-line1">Rohtak's Most</span><br>
+      <span id="hero-title-line1">JAIPUR's Most</span><br>
       <em id="hero-title-line2">Loved Beauty</em><br>
       <span id="hero-title-line3">Parlour</span>
     </h1>
-    <p class="hero-desc fade-up delay-2" id="hero-desc">Experience expert beauty treatments at Yanshika Makeover, Rohtak's most-loved beauty parlour. From stunning bridal makeovers to everyday glam, we craft looks that reveal your true beauty.</p>
+    <p class="hero-desc fade-up delay-2" id="hero-desc">Experience expert beauty treatments at 'N' Unique Beauty Hub, Jaipur's most-loved beauty parlour. From stunning bridal makeovers to everyday glam, we craft looks that reveal your true beauty.</p>
     <div class="hero-btns fade-up delay-3">
-      <a href="https://wa.me/919350837392?text=Hi%20Yanshika%20Makeover!%20I%20would%20like%20to%20book%20an%20appointment." class="btn-primary" target="_blank" rel="noopener">💬 WhatsApp Us</a>
-      <a href="tel:+919350837392" class="btn-call-hero">📞 Call Now</a>
+      <a href="https://wa.me/919414822454?text=Hi%20N%27%20Unique%20Beauty!%20I%20would%20like%20to%20book%20an%20appointment." class="btn-primary" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+      <a href="tel:+919414822454" class="btn-call-hero">📞 Call Now</a>
       <a href="https://share.google/ZU2SpgsQCgpIg26f0" class="btn-directions" target="_blank" rel="noopener">📍 Get Directions</a>
     </div>
   </div>
@@ -483,17 +518,17 @@ document.addEventListener("DOMContentLoaded", function() {
     <div style="position:absolute;inset:0;background:linear-gradient(135deg,#e8d0bc,#c9a96e);display:flex;align-items:center;justify-content:center;">
       <div style="text-align:center;color:rgba(255,255,255,.8);">
         <div style="font-family:'Cormorant Garamond',serif;font-size:72px;line-height:1;">✦</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;margin-top:12px;letter-spacing:3px;">Yanshika</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;margin-top:12px;letter-spacing:3px;">'N' Unique</div>
         <div style="font-size:11px;letter-spacing:6px;text-transform:uppercase;margin-top:8px;opacity:.7;">Makeover</div>
-        <div style="font-size:13px;letter-spacing:3px;text-transform:uppercase;margin-top:16px;opacity:.6;">Rohtak, Haryana</div>
+        <div style="font-size:13px;letter-spacing:3px;text-transform:uppercase;margin-top:16px;opacity:.6;">Jaipur, Rajasthan</div>
       </div>
     </div>
   </div>
   <div class="about-content">
     <span class="section-tag">Our Story</span>
     <h2 class="section-title">Beauty is Our <em>Passion</em></h2>
-    <p id="about-text">Yanshika Makeover is Rohtak's premier beauty destination with a 4.9-star reputation built on trust and artistry. Our expert team specializes in bridal makeovers, hair styling, and complete beauty transformations, ensuring every client leaves feeling radiant and confident.</p>
-    <p>Located in Rajendra Nagar, Rohtak, our studio blends modern techniques with a warm, welcoming environment — because you deserve both exceptional results and an exceptional experience.</p>
+    <p id="about-text">'N' Unique Beauty Hub is Jaipur's premier beauty destination with a 4.9-star reputation built on trust and artistry. Our expert team specializes in bridal makeovers, hair styling, and complete beauty transformations, ensuring every client leaves feeling radiant and confident.</p>
+    <p>Located in Kamla Nehru Nagar, Jaipur, our studio blends modern techniques with a warm, welcoming environment — because you deserve both exceptional results and an exceptional experience.</p>
     <div class="about-stats">
       <div>
         <span class="stat-num" id="stat-years">5+</span>
@@ -524,7 +559,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <div class="reviews-grid">
     <div class="review-card">
       <div class="review-stars">★★★★★</div>
-      <p class="review-text" id="r1-text">"Yanshika Makeover is the best parlour in Rohtak! My bridal look was absolutely stunning. Everyone complimented me on my special day."</p>
+      <p class="review-text" id="r1-text">"'N' Unique Beauty Hub is the best parlour in Jaipur! My bridal look was absolutely stunning. Everyone complimented me on my special day."</p>
       <div class="review-author">
         <div class="review-avatar" id="r1-avatar">N</div>
         <div>
@@ -546,7 +581,7 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
     <div class="review-card">
       <div class="review-stars">★★★★★</div>
-      <p class="review-text" id="r3-text">"I've visited many parlours but Yanshika Makeover stands out. The staff is professional, hygienic, and the results are always perfect."</p>
+      <p class="review-text" id="r3-text">"I've visited many parlours but 'N' Unique Beauty Hub stands out. The staff is professional, hygienic, and the results are always perfect."</p>
       <div class="review-author">
         <div class="review-avatar" id="r3-avatar">R</div>
         <div>
@@ -562,7 +597,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <section class="video-section" style="padding:120px 80px;background:var(--dark2);text-align:center;">
   <span class="section-tag" style="color:var(--gold);">See Us In Action</span>
   <h2 class="section-title" style="color:#fff;margin-bottom:16px;">Watch Our <em>Studio</em></h2>
-  <p style="color:rgba(255,255,255,.45);font-size:15px;font-weight:300;max-width:520px;margin:0 auto 56px;line-height:1.8;">Step inside Yanshika Makeover. Watch how we transform looks, boost confidence, and create beauty experiences that leave a lasting impression.</p>
+  <p style="color:rgba(255,255,255,.45);font-size:15px;font-weight:300;max-width:520px;margin:0 auto 56px;line-height:1.8;">Step inside 'N' Unique Beauty Hub. Watch how we transform looks, boost confidence, and create beauty experiences that leave a lasting impression.</p>
   <div style="position:relative;width:100%;max-width:900px;margin:0 auto;border-radius:4px;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.5);border:1px solid rgba(201,169,110,.2);">
     <div style="padding-top:56.25%;"></div>
     <iframe
@@ -571,7 +606,7 @@ document.addEventListener("DOMContentLoaded", function() {
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
       loading="lazy"
-      title="Yanshika Makeover Showcase">
+      title="N'N Unique Beauty Hub Showcase">
     </iframe>
   </div>
 </section>
@@ -623,28 +658,28 @@ document.addEventListener("DOMContentLoaded", function() {
   <div class="booking-left">
     <span class="section-tag">Visit Us</span>
     <h2 class="section-title">Book Your <em>Appointment</em></h2>
-    <p>Ready to look and feel your best? Reach us on WhatsApp, call us directly, or visit our Rohtak studio. Walk-ins welcome — appointments recommended for bridal bookings.</p>
+    <p>Ready to look and feel your best? Reach us on WhatsApp, call us directly, or visit our Jaipur studio. Walk-ins welcome — appointments recommended for bridal bookings.</p>
     <div class="contact-info">
       <div class="contact-row">
         <div class="contact-icon">📍</div>
         <div>
           <span class="contact-label">Address</span>
           <span id="contact-address">Azad Garh Rd, Azad Garh, Rajendra Nagar</span><br>
-          <span id="contact-city">Rohtak, Haryana 124001</span>
+          <span id="contact-city">Jaipur, Rajasthan 302021</span>
         </div>
       </div>
       <div class="contact-row">
         <div class="contact-icon">📞</div>
         <div>
           <span class="contact-label">Phone</span>
-          <a href="tel:+919350837392" style="color:rgba(255,255,255,.7);text-decoration:none;" id="contact-phone">+91 93508 37392</a>
+          <a href="tel:+919414822454" style="color:rgba(255,255,255,.7);text-decoration:none;" id="contact-phone">+91 94148 22454</a>
         </div>
       </div>
       <div class="contact-row">
         <div class="contact-icon">✉️</div>
         <div>
           <span class="contact-label">Email</span>
-          <span id="contact-email">yanshikamakeover@gmail.com</span>
+          <span id="contact-email">NUniqueBeauty@gmail.com</span>
         </div>
       </div>
       <div class="contact-row">
@@ -657,8 +692,8 @@ document.addEventListener("DOMContentLoaded", function() {
       </div>
     </div>
     <div class="contact-action-btns">
-      <a href="https://wa.me/919350837392?text=Hi%20Yanshika%20Makeover!%20I%20would%20like%20to%20book%20an%20appointment." class="btn-wa" target="_blank" rel="noopener">💬 WhatsApp Us</a>
-      <a href="tel:+919350837392" class="btn-call">📞 Call Now</a>
+      <a href="https://wa.me/919414822454?text=Hi%20N%27%20Unique%20Beauty!%20I%20would%20like%20to%20book%20an%20appointment." class="btn-wa" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+      <a href="tel:+919414822454" class="btn-call">📞 Call Now</a>
       <a href="https://share.google/ZU2SpgsQCgpIg26f0" class="btn-dir" target="_blank" rel="noopener">📍 Get Directions</a>
     </div>
   </div>
@@ -716,13 +751,13 @@ document.addEventListener("DOMContentLoaded", function() {
 <!-- FOOTER -->
 <footer>
   <div>
-    <div class="footer-logo"><span id="footer-logo-name">Yanshika</span> Makeover</div>
-    <p>Rohtak's most-loved beauty parlour. Transforming looks, boosting confidence, one makeover at a time.</p>
-    <p style="margin-top:12px;font-size:12px;" id="footer-address">Azad Garh Rd, Rajendra Nagar, Rohtak, Haryana 124001</p>
+    <div class="footer-logo"><span id="footer-logo-name">'N' Unique Beauty Hub</span></div>
+    <p>Jaipur's most-loved beauty parlour. Transforming looks, boosting confidence, one makeover at a time.</p>
+    <p style="margin-top:12px;font-size:12px;" id="footer-address">Azad Garh Rd, Rajendra Nagar, Jaipur, Rajasthan 302021</p>
     <div class="footer-social">
-      <a href="https://wa.me/919350837392" target="_blank" rel="noopener" title="WhatsApp">💬</a>
+      <a href="https://wa.me/919414822454" target="_blank" rel="noopener" title="WhatsApp">💬</a>
       <a href="https://share.google/ZU2SpgsQCgpIg26f0" target="_blank" rel="noopener" title="Get Directions">📍</a>
-      <a href="tel:+919350837392" title="Call Us">📞</a>
+      <a href="tel:+919414822454" title="Call Us">📞</a>
     </div>
   </div>
   <div>
@@ -742,7 +777,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#booking">Contact</a></li>
-      <li><a href="https://wa.me/919350837392" target="_blank" rel="noopener">WhatsApp</a></li>
+      <li><a href="https://wa.me/919414822454" target="_blank" rel="noopener">WhatsApp</a></li>
     </ul>
   </div>
   <div>
@@ -753,11 +788,11 @@ document.addEventListener("DOMContentLoaded", function() {
       <div class="hours-row"><span>Sunday</span><span>9am – 7pm</span></div>
     </div>
     <div style="margin-top:20px;">
-      <a href="tel:+919350837392" style="color:var(--gold);text-decoration:none;font-size:15px;font-family:'Cormorant Garamond',serif;">+91 93508 37392</a>
+      <a href="tel:+919414822454" style="color:var(--gold);text-decoration:none;font-size:15px;font-family:'Cormorant Garamond',serif;">+91 94148 22454</a>
     </div>
   </div>
   <div class="footer-bottom">
-    <span id="footer-copy">© 2025 Yanshika Makeover. All rights reserved. · Rohtak, Haryana</span>
+    <span id="footer-copy">© 2025 'N' Unique Beauty Hub. All rights reserved. · Jaipur, Rajasthan</span>
     <span>Made with ✦ for beauty</span>
   </div>
 </footer>
